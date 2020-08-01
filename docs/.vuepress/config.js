@@ -1,4 +1,5 @@
-const { description } = require('../../package')
+const { description } = require('../../package');
+const path = require("path");
 
 module.exports = {
   /**
@@ -32,14 +33,15 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
+    logo: '/assets/dva-logo.svg',
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'Notes',
+        link: '/notes/'
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'MD Guide',
+        link: '/kitchen-sink/'
       },
       {
         text: 'VuePress',
@@ -49,25 +51,66 @@ module.exports = {
     sidebar: {
       '/': [
         {
-          title: 'Nav-1',
-          collapsable: true,
+          title: 'HTML',
+          collapsable: false,
           children: [
-            'HTML/',
-            'CSS/',
-            'JS/',
-            'PHP/',
+            '/HTML/snippets.md'
           ]
-        }
+        },
+        {
+          title: 'CSS',
+          collapsable: false,
+          children: [
+            '/CSS/bootstrap4.md'
+          ]
+        },
+        {
+          title: 'JS',
+          collapsable: false,
+          children: [
+            '/JS/jquery.md',
+          ]
+        },
+        {
+          title: 'PHP',
+          collapsable: false,
+          children: [
+            '/PHP/snippets.md',
+            '/PHP/wordpress.md',
+          ]
+        },
+        {
+          title: 'CL',
+          collapsable: false,
+          children: [
+            '/CL/SSH.md',
+          ]
+        },
+        {
+          title: 'Colors',
+          collapsable: false,
+          children: [
+            '/colors/hex-colors.md',
+          ]
+        },
       ],
     }
   },
 
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@assets': path.resolve(__dirname,"../assets")
+      }
+    }
+  },
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
-    ['vuepress-plugin-code-copy', true]
+    ['vuepress-plugin-code-copy', true],
+    '@goy/svg-icons'
   ]
 }
