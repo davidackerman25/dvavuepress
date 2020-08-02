@@ -1,9 +1,9 @@
 # Hex Colors
 
-# IBM
+## [IBM](https://www.carbondesignsystem.com/guidelines/color/usage/)
 
 neutral gray
-```css
+```
 Black:	    #000000
 Gray 100:	#161616
 Gray 90:	#262626
@@ -17,3 +17,5 @@ Gray 20:	#e0e0e0
 Gray 10:	#f4f4f4
 White:  	#ffffff
 ```
+
+## [Material Colors](https://material.io/design/color/the-color-system.html#color-usage-and-palettes)
