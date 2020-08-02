@@ -1,5 +1,4 @@
 const { description } = require('../../package');
-const path = require("path");
 
 module.exports = {
   /**
@@ -46,20 +45,24 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
+    repo: 'https://github.com/davidackerman25/dvavuepress',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: false,
+    lastUpdated: true,
     logo: '/assets/dva-logo.svg',
     nav: [
+      {
+        text: 'Projects',
+        link: '/'
+      },
       {
         text: 'Notes',
         link: '/notes/'
       },
       {
         text: 'MD Guide',
-        link: '/kitchen-sink/'
+        link: '/md-guide/'
       },
       {
         text: 'VuePress',
@@ -72,67 +75,60 @@ module.exports = {
           title: 'HTML',
           collapsable: false,
           children: [
-            '/HTML/snippets.md'
+            '/notes/HTML/snippets.md'
           ]
         },
         {
           title: 'CSS',
           collapsable: false,
           children: [
-            '/CSS/flexbox.md',
-            '/CSS/bootstrap4.md',
-            '/CSS/fontawesome.md',
+            '/notes/CSS/flexbox.md',
+            '/notes/CSS/bootstrap4.md',
+            '/notes/CSS/fontawesome.md',
           ]
         },
         {
           title: 'JS',
           collapsable: false,
           children: [
-            '/JS/jquery.md',
+            '/notes/JS/jquery.md',
           ]
         },
         {
           title: 'PHP',
           collapsable: false,
           children: [
-            '/PHP/snippets.md',
-            '/PHP/wordpress.md',
+            '/notes/PHP/snippets.md',
+            '/notes/PHP/wordpress.md',
           ]
         },
         {
           title: 'CL',
           collapsable: false,
           children: [
-            '/CL/SSH.md',
+            '/notes/CL/SSH.md',
           ]
         },
         {
           title: 'Colors',
           collapsable: false,
           children: [
-            '/colors/hex-colors.md',
+            '/notes/colors/hex-colors.md',
           ]
         },
         {
           title: 'Links',
           collapsable: false,
           children: [
-            '/links/web-dev.md',
-            '/links/web-design.md',
-            '/links/ecommerce.md'
+            '/notes/links/web-dev.md',
+            '/notes/links/web-design.md',
+            '/notes/links/ecommerce.md'
           ]
         },
       ],
     }
   },
 
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@assets': path.resolve(__dirname,"../assets")
-      }
-    }
-  },
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */

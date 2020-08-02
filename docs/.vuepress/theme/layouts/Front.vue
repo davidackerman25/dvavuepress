@@ -15,34 +15,12 @@
       @click="toggleSidebar(false)"
     />
 
-    <Sidebar
-      :items="sidebarItems"
-      @toggle-sidebar="toggleSidebar"
-    >
-      <template #top>
-        <slot name="sidebar-top" />
-      </template>
-      <template #bottom>
-        <slot name="sidebar-bottom" />
-      </template>
-    </Sidebar>
-
-    <Page
-      sidebar-items="sidebarItems"
-    >
-      <template #top>
-        <slot name="page-top" />
-      </template>
-      <template #bottom>
-        <slot name="page-bottom" />
-      </template>
-    </Page>
+  
   </div>
 </template>
 
 <script>
 import Navbar from '@theme/components/Navbar.vue'
-import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
 
@@ -50,7 +28,6 @@ export default {
   name: 'Layout',
 
   components: {
-    Page,
     Sidebar,
     Navbar
   },
