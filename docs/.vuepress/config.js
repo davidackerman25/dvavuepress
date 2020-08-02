@@ -79,7 +79,9 @@ module.exports = {
           title: 'CSS',
           collapsable: false,
           children: [
-            '/CSS/bootstrap4.md'
+            '/CSS/flexbox.md',
+            '/CSS/bootstrap4.md',
+            '/CSS/fontawesome.md',
           ]
         },
         {
@@ -116,6 +118,8 @@ module.exports = {
           collapsable: false,
           children: [
             '/links/web-dev.md',
+            '/links/web-design.md',
+            '/links/ecommerce.md'
           ]
         },
       ],

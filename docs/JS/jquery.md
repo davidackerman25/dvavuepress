@@ -1,5 +1,5 @@
 # Jquery
-
+[Jquery docs](https://jquery.com/)
 ## $( document ).ready(function()
 ```js
 $( document ).ready(function() {
