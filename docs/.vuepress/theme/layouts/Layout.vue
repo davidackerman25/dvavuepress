@@ -27,8 +27,11 @@
       </template>
     </Sidebar>
 
+    <Home v-if="$page.frontmatter.home" />
+
     <Page
-      sidebar-items="sidebarItems"
+      v-else
+      :sidebar-items="sidebarItems"
     >
       <template #top>
         <slot name="page-top" />
@@ -41,6 +44,7 @@
 </template>
 
 <script>
+import Home from '@theme/components/Home.vue'
 import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
@@ -50,6 +54,7 @@ export default {
   name: 'Layout',
 
   components: {
+    Home,
     Page,
     Sidebar,
     Navbar
@@ -82,7 +87,8 @@ export default {
     shouldShowSidebar () {
       const { frontmatter } = this.$page
       return (
-        frontmatter.sidebar !== false
+        !frontmatter.home
+        && frontmatter.sidebar !== false
         && this.sidebarItems.length
       )
     },

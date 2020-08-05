@@ -71,7 +71,7 @@ module.exports = {
       },
       {
         text: 'Resume',
-        link: '/resume-davidackerman-050320.pdf',
+        link: 'https://drive.google.com/file/d/18XsDs2yBx-AluUVEFVD7EGrHiGZuZpeY/view?usp=sharing',
         target: '_blank'
       },
       {
