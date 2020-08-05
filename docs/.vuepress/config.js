@@ -61,6 +61,10 @@ module.exports = {
         link: '/notes/'
       },
       {
+        text: 'Resume',
+        link: '/resume-davidackerman-050320.pdf'
+      },
+      {
         text: 'MD Guide',
         link: '/md-guide/'
       },
