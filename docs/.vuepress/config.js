@@ -49,7 +49,7 @@ module.exports = {
     editLinks: false,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: true,
+    lastUpdated: false,
     logo: '/assets/dva-logo.svg',
     nav: [
       {
