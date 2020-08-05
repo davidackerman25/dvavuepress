@@ -106,7 +106,8 @@ module.exports = {
           title: 'CL',
           collapsable: false,
           children: [
-            '/notes/CL/snippets.md',
+            '/notes/CL/linux.md',
+            '/notes/CL/dos.md',
             '/notes/CL/SSH.md',
           ]
         },
