@@ -3,7 +3,7 @@ sidebar: false
 ---
 
 # Projects
-
+---
 <div class="row">
 <div class="col-md-3 project-tile">
 <img src="./img/feature_business-highlights-768x768.jpg" >
@@ -34,3 +34,7 @@ SEPA Symposium
 MARK-10 WEBSITE REDESIGN
 </div>
 </div>
+
+# About
+---
+David Ackerman is a graphic designer and web developer located in NY.
