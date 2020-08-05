@@ -54,7 +54,11 @@ module.exports = {
     nav: [
       {
         text: 'Projects',
-        link: '/'
+        link: '/',
+        items: [
+          { text: 'Mark-10 - website redesign', link: '/projects/m10-website.html' },
+          { text: '', link: '/projects/.html' }
+        ]
       },
       {
         text: 'Notes',

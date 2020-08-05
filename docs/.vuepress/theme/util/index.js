@@ -39,7 +39,7 @@ export function ensureExt (path) {
   if (endingSlashRE.test(normalized)) {
     return path
   }
-  return normalized + hash
+  return path + hash
 }
 
 export function isActive (route, path) {

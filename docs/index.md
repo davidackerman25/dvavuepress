@@ -31,7 +31,7 @@ SEPA Symposium
 </div>
 <div class="col-md-3 project-tile">
 <img src="./img/m10featured-768x768.jpg" >
-MARK-10 WEBSITE REDESIGN
+Mark-10 - website redesign
 </div>
 </div>
 
