@@ -1,7 +1,7 @@
 ---
-layout: Front
+sidebar: false
 ---
 
-# Introduction
+# Projects
 
 David Ackerman is a Graphic Designer and Web Developer. :thumbsup:

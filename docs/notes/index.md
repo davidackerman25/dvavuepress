@@ -1,3 +1,5 @@
-# Introduction
+# 📒
 
-David Ackerman is a Graphic Designer and Web Developer. :thumbsup:
+Dave's web developer notes
+
+

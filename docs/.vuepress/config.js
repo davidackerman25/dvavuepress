@@ -70,7 +70,7 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/': [
+      '/notes/': [
         {
           title: 'HTML',
           collapsable: false,
