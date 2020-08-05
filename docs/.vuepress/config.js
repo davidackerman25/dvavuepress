@@ -83,7 +83,7 @@ module.exports = {
           collapsable: false,
           children: [
             '/notes/CSS/flexbox.md',
-            '/notes/CSS/bootstrap4.md',
+            '/notes/CSS/frameworks.md',
             '/notes/CSS/fontawesome.md',
           ]
         },
