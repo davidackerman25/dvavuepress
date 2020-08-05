@@ -57,7 +57,12 @@ module.exports = {
         link: '/',
         items: [
           { text: 'Mark-10 - website redesign', link: '/projects/m10-website.html' },
-          { text: '', link: '/projects/.html' }
+          { text: 'SEPA Symposium', link: '/projects/sepa.html' },
+          { text: 'SCACNC', link: '/projects/scacnc.html' },
+          { text: 'Motion Graphics - IDJNOW', link: '/projects/idjnow.html' },
+          { text: 'The Farmhouse Bed and Breakfast', link: '/projects/farmhousebnb.html' },
+          { text: 'TBR News Media - Data Visualization', link: '/projects/tbr-datavis.html' },
+          { text: 'TBR News Media – Business Highlights', link: '/projects/tbr-businesshighlights.html' }
         ]
       },
       {
