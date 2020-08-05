@@ -62,7 +62,8 @@ module.exports = {
       },
       {
         text: 'Resume',
-        link: '/resume-davidackerman-050320.pdf'
+        link: '/resume-davidackerman-050320.pdf',
+        target: '_blank'
       },
       {
         text: 'MD Guide',
